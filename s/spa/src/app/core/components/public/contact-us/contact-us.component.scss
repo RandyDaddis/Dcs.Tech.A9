@@ -1,0 +1,64 @@
+@import "src/content/abstracts/_variables_colors";
+/*** BASE RESOLUTION ***/
+@media only screen and (min-width: 0px) {
+  .component {
+    background-image: url(src/assets/images/bigstock-Businesswoman-Holding-Mobile-P-153233570_1366x911.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-wrapper {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+      background: linear-gradient( rgba($theme-card-border-color, .85), rgba($theme-card-bg, .8), rgba($theme-card-bg, .9), rgba($theme-card-bg, .97), rgba($theme-card-bg, .98), rgba($theme-card-bg, .99), rgba($theme-card-bg, 1), rgba($theme-card-bg, .99), rgba($theme-card-bg, .98), rgba($theme-card-bg, .97), rgba($theme-card-bg, .9), rgba($theme-card-bg, .8), rgba($theme-card-border-color, .85));
+      border-left: 4px outset rgba($theme-card-border-color, .85);
+      border-right: 4px outset rgba($theme-card-border-color, .85);
+      text-align: center;
+
+      .card-header {
+        margin-bottom: .5rem;
+      }
+
+      .card-body {
+        border-top: 4px ridge rgba($theme-card-border-color, .85);
+        padding: 1rem 2rem;
+
+        ul {
+          list-style: none;
+          margin-top: 1rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 912px) {
+  .component {
+    background-image: url(src/assets/images/bigstock-Businesswoman-Holding-Mobile-P-153233570_1920x1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-height: 1281px) {
+  .component {
+    background-image: url(src/assets/images/bigstock-Businesswoman-Holding-Mobile-P-153233570_3840x2560.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

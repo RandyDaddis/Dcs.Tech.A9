@@ -1,0 +1,144 @@
+@import "src/content/abstracts/_variables_colors";
+@import "src/content/abstracts/_variables_layout";
+@import 'src/content/mixins';
+/*** BASE RESOLUTION ***/
+@media only screen and (min-width: 0px) {
+
+  .component {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .component-header,
+  .component-footer {
+    background: linear-gradient( rgba($theme-card-border-color, .85), rgba($theme-card-border-color, 1), rgba($theme-card-bg, .9), rgba($theme-card-bg, .97), rgba($theme-card-bg, .98), rgba($theme-card-bg, .99), rgba($theme-card-bg, 1), rgba($theme-card-bg, .99), rgba($theme-card-bg, .98), rgba($theme-card-bg, .97), rgba($theme-card-bg, .9), rgba($theme-card-border-color, 1), rgba($theme-card-border-color, .85));
+  }
+
+  .component-header ::ng-deep .navbar {
+    padding: 1rem;
+  }
+
+  .feature {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-bottom: 4px outset rgba($theme-card-border-color, .85);
+
+    .feature-background-image {
+      width: 100%;
+    }
+  }
+
+  .feature:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    background: linear-gradient( rgba($theme-card-border-color, .85), rgba($theme-card-bg, .8), rgba($theme-card-bg, .85), rgba($theme-card-bg, .875), rgba($theme-card-bg, .9), rgba($theme-card-bg, .97), rgba($theme-card-bg, .98), rgba($theme-card-bg, .99), rgba($theme-card-bg, 1), rgba($theme-card-bg, .99), rgba($theme-card-bg, .98), rgba($theme-card-bg, .97), rgba($theme-card-bg, .9), rgba($theme-card-bg, .875), rgba($theme-card-bg, .85), rgba($theme-card-bg, .8), rgba($theme-card-border-color, .85));
+    border-left: 4px outset rgba($theme-card-border-color, .85);
+    border-right: 4px outset rgba($theme-card-border-color, .85);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .card-wrapper {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .card-body {
+      padding: 1rem;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .card-header {
+      font-size: $font-size-1pt25;
+      margin-bottom: 0;
+    }
+
+    .card-header-title {
+      border-bottom: 2px solid;
+      margin-left: .5rem;
+    }
+  }
+}
+/* TABLET RESOLUTION */
+@media only screen and (min-width: 768px) {
+
+  .feature:after {
+    background: none;
+  }
+
+  .card {
+    position: relative;
+    z-index: 4;
+    max-width: $bp-tablet-paragraph;
+
+    .card-header {
+      position: relative;
+      z-index: 6;
+      font-size: $font-size-1pt75;
+    }
+
+    .card-body {
+      position: relative;
+      z-index: 6;
+      font-size: $font-size-1pt5;
+
+      p {
+        position: relative;
+        z-index: 7;
+      }
+    }
+  }
+
+  .card:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    background: linear-gradient( rgba($theme-card-border-color, .85), rgba($theme-card-bg, .8), rgba($theme-card-bg, .85), rgba($theme-card-bg, .875), rgba($theme-card-bg, .9), rgba($theme-card-bg, .97), rgba($theme-card-bg, .98), rgba($theme-card-bg, .99), rgba($theme-card-bg, 1), rgba($theme-card-bg, .99), rgba($theme-card-bg, .98), rgba($theme-card-bg, .97), rgba($theme-card-bg, .9), rgba($theme-card-bg, .875), rgba($theme-card-bg, .85), rgba($theme-card-bg, .8), rgba($theme-card-border-color, .85));
+    border-left: 4px outset rgba($theme-card-border-color, .85);
+    border-right: 4px outset rgba($theme-card-border-color, .85);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+}
+/* 720p HD TV 1280x720 (DPR: 1) */
+/*@media only screen and (min-width: 1280px) {}*/
+/* 1080p Full HD TV 1920x1080 (DPR: 1) */
+/*@media only screen and (min-width: 1920px) {}*/
+/* 4K Ultra HD TV 3840x2160 (DPR: 1) */
+@media only screen and (min-width: 3840px) {
+  .card-header {
+    position: relative;
+    z-index: 6;
+    font-size: $font-size-2pt5;
+  }
+
+  .card-body {
+    position: relative;
+    z-index: 6;
+    font-size: $font-size-2pt25;
+    max-width: $bp-4kp-paragraph;
+  }
+}

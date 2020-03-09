@@ -1,1 +1,37 @@
-<p>contact-us works!</p>
+<div class="component">
+  <header class="component-header">
+    <app-public-top-nav></app-public-top-nav>
+  </header>
+  <main class="main-wrapper" role="main" data-role="content">
+    <div class="card">
+      <h1 class="card-header">{{ company.cardHeader }}</h1>
+      <div class="card-body">
+        <address class="card-text">
+          <dl class="vcard" itemscope itemtype="http://schema.org/Organization">
+            <dt class="fn org"><span itemprop="name">{{ company.name }}</span></dt>
+            <dd class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <ul>
+                <li>
+                  <span itemprop="streetAddress">{{ company.addressLine1 }}</span>
+                </li>
+                <li>
+                  <span itemprop="addressLocality">{{ company.city }}</span><span>,&nbsp;</span>
+                  <span itemprop="addressRegion">{{ company.state }}</span><span>&nbsp;</span>
+                  <span itemprop="postalCode">{{ company.postalCode }}</span>
+                </li>
+              </ul>
+            </dd>
+            <dd id="contactMainPhoneNumber" itemprop="telephone"><span>{{ company.phoneNumber }}</span></dd>
+            <!--<dd id="contactMainUrl">
+              <span>Website:&nbsp;</span>
+            </dd>
+            <dd id="contactMainEmail"><span>{{ company.email }}</span></dd>-->
+          </dl>
+        </address>
+      </div>
+    </div>
+  </main>
+  <footer class="component-footer">
+    <app-public-footer></app-public-footer>
+  </footer>
+</div>

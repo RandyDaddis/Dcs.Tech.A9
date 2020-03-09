@@ -1,0 +1,74 @@
+@import "src/content/abstracts/_variables_layout";
+@import 'src/content/mixins';
+
+/*** MOBILE PORTRAIT RESOLUTION ***/
+@media only screen and (min-width: 0px) {
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .3rem 0;
+
+    .copyright {
+      font-size: $font-size-pt8;
+      margin-bottom: 0;
+      padding: 0 1rem .3rem;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .navbar-nav .nav-link {
+    padding: .3rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .footer {
+    @include container-laptop-portrait-resolution;
+  }
+}
+
+/*** TABLET LANDSCAPE RESOLUTION ***/
+@media only screen and (min-width: 1024px) {
+  .footer {
+    @include container-tablet-landscape-resolution;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    @include container-720p-landscape-resolution;
+  }
+}
+
+/* HEIGHT SECTION  */
+
+@media only screen and (min-height: 667px) {
+  .footer {
+    padding: .5rem 0;
+  }
+}
+
+@media only screen and (min-height: 731px) {
+  .footer {
+    padding: .3rem 0;
+  }
+}
+
+@media only screen and (min-height: 1112px) {
+
+  .footer {
+    padding: 1rem 0;
+
+    .copyright {
+      padding: 1rem;
+      font-size: $font-size-1;
+    }
+  }
+}

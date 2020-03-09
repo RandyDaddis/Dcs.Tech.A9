@@ -1,1 +1,27 @@
-<p>public-top-nav works!</p>
+<nav class="navbar navbar-expand-lg">
+  <div class="navbar-brand">
+    <img src="../../../../../assets/images/logo_stackedRoof_rotated_21x30.png" alt="logo" />
+    <a routerLink="{{homeRoute}}">
+      <span class="site-name">{{siteName}}</span>
+    </a>
+  </div>
+  <button id="navbarToggler"
+          class="navbar-toggler"
+          (click)="toggle('navbarToggler', ['navbarSupportedContent'])"
+          type="button"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navbarSupportedContent" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="{{contactUsRoute}}">{{contactUsRouteAnchorText}} <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="{{servicesRoute}}">{{servicesRouteAnchorText}} <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
