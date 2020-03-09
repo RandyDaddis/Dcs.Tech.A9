@@ -1,0 +1,6 @@
+@import "src/content/abstracts/variables";
+@mixin container-4kp-resolution {
+  width: calc(#{$bp-4kp} - #{$gutter*2});
+  margin-right: auto;
+  margin-left: auto;
+}

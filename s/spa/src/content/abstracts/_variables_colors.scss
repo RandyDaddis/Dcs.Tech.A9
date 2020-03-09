@@ -1,0 +1,135 @@
+$color-white: #fff !default;
+$color-black: #000 !default;
+
+ /* Credit https://github.com/twbs/bootstrap/ */
+$color-gray-100: #f8f9fa !default;
+$color-gray-200: #e9ecef !default;
+$color-gray-300: #dee2e6 !default;
+$color-gray-400: #ced4da !default;
+$color-gray-500: #adb5bd !default;
+$color-gray-600: #6c757d !default;
+$color-gray-700: #495057 !default;
+$color-gray-800: #343a40 !default;
+$color-gray-900: #212529 !default;
+$color-grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$color-grays: map-merge( ( "100": $color-gray-100, "200": $color-gray-200, "300": $color-gray-300, "400": $color-gray-400, "500": $color-gray-500, "600": $color-gray-600, "700": $color-gray-700, "800": $color-gray-800, "900": $color-gray-900 ), $color-grays );
+
+$color-blue-rgb: "13,110,253";
+$color-blue-rgba15pct: #{"rgba(" + $color-blue-rgb + ",.15)"}; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba30pct: #{"rgba(" + $color-blue-rgb + ",.3)"}; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba50pct: #{"rgba(" + $color-blue-rgb + ",.5)"}; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba75pct: #{"rgba(" + $color-blue-rgb + ",.75)"}; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba90pct: #{"rgba(" + $color-blue-rgb + ",.90)"}; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba30pct-wrapped-in-single-quotes: "'rgba(" + $color-blue-rgb + ",.3)" + "'"; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba50pct-wrapped-in-single-quotes: "'rgba(" + $color-blue-rgb + ",.5)" + "'"; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba75pct-wrapped-in-single-quotes: "'rgba(" + $color-blue-rgb + ",.75)" + "'"; /* TODO: refactor to utility (or SASS colors?) */
+$color-blue-rgba90pct-wrapped-in-single-quotes: "'rgba(" + $color-blue-rgb + ",.9)" + "'"; /* TODO: refactor to utility (or SASS colors?) */
+
+$color-blue: #0d6efd !default;
+$color-indigo: #6610f2 !default;
+$color-purple: #6f42c1 !default;
+$color-pink: #d63384 !default;
+$color-red: #dc3545 !default;
+$color-orange: #fd7e14 !default;
+$color-yellow: #ffc107 !default;
+$color-green: #28a745 !default;
+$color-teal: #20c997 !default;
+$color-cyan: #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge( ( "blue": $color-blue, "indigo": $color-indigo, "purple": $color-purple, "pink": $color-pink, "red": $color-red, "orange": $color-orange, "yellow": $color-yellow, "green": $color-green, "teal": $color-teal, "cyan": $color-cyan, "white": $color-white, "gray": $color-gray-600, "gray-dark": $color-gray-800 ), $colors );
+
+$color-code: $color-black !default;
+
+$color-primary: $color-blue !default;
+$color-secondary: $color-gray-800 !default;
+$color-success: $color-green !default;
+$color-info: $color-cyan !default;
+$color-warning: $color-yellow !default;
+$color-danger: $color-red !default;
+$color-light: $color-gray-100 !default;
+$color-dark: $color-gray-800 !default;
+
+$color-primary: #6D5D4B;
+$color-primary-complimentary: #876742;
+$color-primary-sunburst: #b29670;
+/*
+$color-light: #e9ecef;
+$color-secondary: #101d2c;
+*/
+
+$bg-color-blueish: #0a2a58;
+$bg-color-purplish: #4d4b6d;
+$bg-color-light: #9afaf9;
+$bg-color-darker: #101d2c;
+$bg-color-dark: #172c3a;
+$bg-color-complimentary: #3fb6b4;
+$bg-color-complimentary-rgb: "63, 182, 180";
+$bg-color-complimentary-rgba90pct-wrapped-in-single-quotes: "'rgba(" + $bg-color-complimentary-rgb + ",.9)" + "'"; /* TODO: refactor to utility (or SASS colors?) */
+$bg-color-honeycomb-light: #71cfce;
+/*$bg-color-card: #2e6aa2;*/
+$bg-color-card: $bg-color-blueish;
+
+$color-body: $color-gray-900 !default;
+$bg-color-body: #0f0f0f !default;
+
+$border-color: $color-gray-300 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge( ( "primary": $color-primary, "secondary": $color-secondary, "success": $color-success, "info": $color-info, "warning": $color-warning, "danger": $color-danger, "light": $color-light, "dark": $color-dark ), $theme-colors );
+
+$box-shadow-sm: 0 .125rem .25rem rgba($color-black, .075) !default;
+$box-shadow: 0 .5rem 1rem rgba($color-black, .15) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($color-black, .175) !default;
+
+/*$link-color: theme-colors("primary") !default;*/
+/*$link-color: $color-blue !default;*/
+/*$link-color: #4d4b6d;*/ /*bluish*/
+/*$link-color: #4b6d4f;*/ /*greenish*/
+/*$link-color: $color-blue-rgba75pct;*/
+$link-color: "inherit";
+
+$color-rgb-levels-blue: "0, 0, 255"; /*blue*/
+$color-rgb-levels-green: "0, 255, 0"; /*green*/
+$color-rgb-levels-2: "75, 109, 79"; /*greenish*/
+$color-rgb-levels-1x-2x-3x: "64, 128, 256"; /*bluish*/
+$color-rgb-levels-1x-3x-2x: "64, 256, 128"; /*greenish*/
+$link-color-rgb: $color-rgb-levels-1x-2x-3x;
+$link-color-rgba90pct: #{"rgba(" + $link-color-rgb + ",.90)"};
+$link-color-rgba90pct-wrapped-in-single-quotes: "'rgba(" + $link-color-rgb + ",.9)" + "'"; /* TODO: refactor to utility (or SASS colors?) */
+
+$link-hover-color: $color-blue !default; /*darken($link-color, 15%) !default*/
+ /* Darken percentage for links with `.text-*` class (e.g. `.text-success`) */
+$emphasized-link-hover-darken-percentage: 15% !default;
+
+$navbar-dark-color: #0699cd; /*#26597b;*/ /* #0089bf */
+$navbar-light-color: $color-light;
+$navbar-light-color-bg: #00897b; /*rgb(0,137,123)*/
+
+$nav-hamburger-border-color: $link-color-rgba90pct;
+$nav-hamburger-icon-data: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke=" + $link-color-rgba90pct-wrapped-in-single-quotes + " stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e";
+$nav-hamburger-icon: #{'url("' + $nav-hamburger-icon-data + '")'};
+
+$mark-bg: #fcf8e3 !default;
+
+/* Color Theme 1 */
+$theme-1-bg: $bg-color-complimentary;
+$theme-1-border-color: #408a97;
+$theme-1-card-bg: $bg-color-card;
+$theme-1-card-border-color: $theme-1-border-color;
+$theme-1-color: $color-primary;
+$theme-1-nav-bg: $bg-color-honeycomb-light;
+$theme-1-nav-link-color: $link-color-rgba90pct;
+$theme-1-nav-hamburger-icon: $nav-hamburger-icon;
+/* The color scheme of the entire site can be changed by the following variables */
+$theme-bg: $theme-1-bg;
+$theme-border-color: $theme-1-border-color;
+$theme-card-bg: $theme-1-card-bg;
+$theme-card-border-color: $theme-1-card-border-color;
+$theme-color: $theme-1-color;
+$theme-nav-bg: $theme-1-nav-bg;
+$theme-nav-hamburger-icon: $theme-1-nav-hamburger-icon ;
+$theme-nav-link-color: $theme-1-nav-link-color;

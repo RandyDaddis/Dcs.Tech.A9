@@ -1,0 +1,51 @@
+@import '../abstracts/variables';
+/*** BASE RESOLUTION ***/
+@media only screen and (min-width: 0px) {
+
+  body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    font-size: $font-size-1;
+  }
+
+  button:not(:disabled), [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  button, select {
+    text-transform: none;
+  }
+
+  button, input {
+    overflow: visible;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+  }
+
+  ol, ul, dl {
+    margin-top: 0;
+  }
+
+  ul li {
+  }
+
+}
+/*** TABLET RESOLUTION ***/
+/*@media only screen and (min-width: 768px) {}*/
+/* WIDE RESOLUTION */
+@media only screen and (min-width: 992px) {
+
+  body {
+    font-size: $font-size-1pt25;
+  }
+}

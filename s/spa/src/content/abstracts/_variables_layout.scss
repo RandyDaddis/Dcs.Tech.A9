@@ -1,0 +1,64 @@
+$gutter: 16px;
+
+$bp-4kp: 3840px;
+$bp-4kp-paragraph: 1024px;
+$bp-720p-landscape: 1280px;
+$bp-720p-portrait: 720px;
+$bp-8kp: 7680px;
+$bp-desktop: 1920px;
+$bp-laptop-landscape: 1366px;
+$bp-laptop-portrait: 768px;
+$bp-mobile-landscape: 640px;
+$bp-mobile-portrait: 360px;
+$bp-tablet-paragraph: 540px;
+$bp-tablet-portrait: 768px;
+$bp-tablet-landscape: 1024px;
+
+$body-text-align: null !default;
+
+$border-width: 1px !default;
+
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+$font-size-sub-sup: .75em !default;
+
+$font-size-root: null !default;
+$font-size-base: 1rem !default; /* Assumes the browser default, typically `16px` */
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-sm: ($font-size-base * .875) !default;
+
+$font-size-pt8: .8rem;
+$font-size-1: $font-size-base;
+$font-size-1pt25: ($font-size-1 * 1.25);
+$font-size-1pt5: ($font-size-1 * 1.5);
+$font-size-1pt75: ($font-size-1 * 1.75);
+$font-size-2: ($font-size-1 * 2);
+$font-size-2pt25: ($font-size-1 * 2.25);
+$font-size-2pt5: ($font-size-1 * 2.5);
+
+$label-margin-bottom: .5rem !default;
+
+$legend-margin-bottom: .5rem !default;
+$legend-font-size: 1.5rem !default;
+
+$line-height-base: 1.5 !default;
+$line-height-lg: 2 !default;
+$line-height-sm: 1.25 !default;
+
+$line-height: 1.6;
+
+$mark-padding: .2em !default;
+
+$paragraph-margin-bottom: 1rem !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge( ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3) ), $spacers );
+
+ /* This variable affects the `.h-*` and `.w-*` classes */
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge( ( 25: 25%, 50: 50%, 75: 75%, 100: 100%, auto: auto ), $sizes );

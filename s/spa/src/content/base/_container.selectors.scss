@@ -1,0 +1,31 @@
+@import '../abstracts/variables';
+@import 'src/content/mixins';
+/*** MOBILE RESOLUTION ***/
+@media only screen and (min-width: 0px) {
+
+  .container {
+    @include container-mobile-portrait-resolution;
+  }
+
+}
+/*** TABLET PORTRAIT RESOLUTION ***/
+@media only screen and (min-width: 768px) {
+
+  .container {
+    @include container-tablet-portrait-resolution;
+  }
+}
+/*** TABLET LANDSCAPE RESOLUTION ***/
+@media only screen and (min-width: 1024px) {
+
+  .container {
+    @include container-tablet-landscape-resolution;
+  }
+}
+/*** 720p LANDSCAPE RESOLUTION ***/
+@media only screen and (min-width: 1280px) {
+
+  .container {
+    @include container-720p-landscape-resolution;
+  }
+}

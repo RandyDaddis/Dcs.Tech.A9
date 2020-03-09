@@ -1,0 +1,5 @@
+@mixin container-mobile-portrait-resolution {
+  width: calc(#{$bp-mobile-portrait} - #{$gutter*2});
+  margin-right: auto;
+  margin-left: auto;
+}

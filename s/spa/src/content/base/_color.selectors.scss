@@ -1,0 +1,59 @@
+a {
+  color: $theme-nav-link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+a:not([href]) {
+  &,
+  &:hover {
+    color: inherit;
+  }
+}
+
+body {
+  background-color: $bg-color-complimentary;
+  color: $theme-color;
+}
+
+.bg-dark {
+  /*background-color: $bg-color-dark;*/
+  background-color: $theme-bg;
+}
+/* TODO: refactor background colors  */
+.bg-light {
+  /*background-color: $color-blue-rgba15pct;*/
+  background-color: $bg-color-complimentary;
+}
+
+.component-header,
+.component-footer {
+  background-color: $theme-nav-bg;
+}
+
+.navbar-nav .active > .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-nav .show > .nav-link {
+  color: $theme-nav-link-color;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border-color: $nav-hamburger-border-color;
+}
+
+.navbar-toggler-icon {
+  background-image: $nav-hamburger-icon !important;
+}
+
+.theme-bg {
+  background-color: $theme-bg;
+}
+
+.theme-nav-bg {
+  background-color: $theme-nav-bg;
+}

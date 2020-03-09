@@ -1,0 +1,5 @@
+@mixin container-laptop-portrait-resolution {
+  width: calc(#{$bp-laptop-portrait} - #{$gutter*2});
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -1,0 +1,5 @@
+@mixin container-desktop-resolution {
+  width: calc(#{$bp-desktop} - #{$gutter*2});
+  margin-right: auto;
+  margin-left: auto;
+}

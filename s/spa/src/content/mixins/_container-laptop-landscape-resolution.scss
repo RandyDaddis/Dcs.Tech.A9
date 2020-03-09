@@ -1,0 +1,5 @@
+@mixin container-laptop-landscape-resolution {
+  width: calc(#{$bp-laptop-landscape} - #{$gutter*2});
+  margin-right: auto;
+  margin-left: auto;
+}

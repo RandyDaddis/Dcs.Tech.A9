@@ -1,0 +1,5 @@
+@mixin container-tablet-landscape-resolution {
+  width: calc(#{$bp-tablet-landscape} - #{$gutter*2});
+  margin-right: auto;
+  margin-left: auto;
+}

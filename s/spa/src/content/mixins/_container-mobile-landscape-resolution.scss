@@ -1,0 +1,5 @@
+@mixin container-mobile-landscape-resolution {
+  width: calc(#{$bp-mobile-landscape} - #{$gutter*2});
+  margin-right: auto;
+  margin-left: auto;
+}

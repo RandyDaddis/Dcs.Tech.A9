@@ -1,0 +1,39 @@
+@import '../abstracts/variables';
+@media only screen and (min-width: 0px) {
+
+  .list-style-none {
+      list-style: none;
+  }
+
+  .mr-1 {
+    margin-right: $spacer / 3;
+  }
+
+  .mr-3 {
+    margin-right: $spacer;
+  }
+
+  .mr-auto, .mx-auto {
+    margin-right: auto !important;
+  }
+
+  .pt-3 {
+    padding-top: 1rem;
+  }
+
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .sr-only {
+    white-space: nowrap;
+  }
+
+}
